@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.6;
+    background-color: #FFFFFF;
+    color: #2E2E2E;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #2E2E2E;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-maroon-primary hover:bg-maroon-accent text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5;
+  }
+  
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-gray-800 font-medium py-3 px-6 rounded-lg border border-gray-300 transition-all duration-200 shadow-sm hover:shadow-md;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-300;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-maroon-accent focus:border-transparent transition-all duration-200;
+  }
+  
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  
+  .text-primary {
+    @apply text-maroon-primary;
+  }
+  
+  .bg-primary {
+    @apply bg-maroon-primary;
+  }
+  
+  .border-primary {
+    @apply border-maroon-primary;
+  }
+
+  /* Enhanced social media icons with uniform styling */
+  .social-icon {
+    @apply inline-flex items-center justify-center;
+    @apply transition-all duration-300 ease-in-out;
+    @apply focus:outline-none focus:ring-2 focus:ring-maroon-primary focus:ring-offset-2 focus:ring-offset-gray-800;
+    @apply active:scale-95;
+    @apply cursor-pointer;
+    min-width: 44px; /* Minimum touch target size for mobile */
+    min-height: 44px;
+  }
+
+  .social-icon:hover {
+    @apply transform scale-110 -translate-y-1;
+    @apply shadow-lg;
+  }
+
+  .social-icon:focus {
+    @apply ring-2 ring-maroon-primary ring-offset-2 ring-offset-gray-800;
+  }
+
+  .social-icon:active {
+    @apply scale-95 translate-y-0;
+    animation: socialPulse 0.2s ease-in-out;
+  }
+
+  /* Enhanced hover effects for social icons */
+  .social-icon svg {
+    @apply transition-all duration-300;
+  }
+
+  .social-icon:hover svg {
+    @apply scale-110;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  }
+
+  /* Cross-platform Gmail compose link styles */
+  .email-link {
+    @apply inline-flex items-center justify-center;
+    @apply transition-all duration-300 ease-in-out;
+    @apply focus:outline-none focus:ring-2 focus:ring-maroon-primary focus:ring-offset-2 focus:ring-offset-gray-800;
+    @apply active:scale-95;
+    min-width: 44px; /* Minimum touch target size for mobile */
+    min-height: 44px;
+  }
+
+  .email-link:hover {
+    @apply transform scale-110 -translate-y-1;
+  }
+
+  .email-link:focus {
+    @apply ring-2 ring-maroon-primary ring-offset-2 ring-offset-gray-800;
+  }
+
+  /* Enhanced hover effects for email link */
+  .email-link svg {
+    @apply transition-transform duration-200;
+  }
+
+  .email-link:hover svg {
+    @apply scale-110;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Cross-platform email link utilities */
+  .email-compose-ready {
+    @apply cursor-pointer select-none;
+  }
+
+  /* Mobile-first responsive utilities */
+  @media (max-width: 768px) {
+    .social-icon, .email-link {
+      @apply p-3;
+      min-width: 48px;
+      min-height: 48px;
+    }
+  }
+
+  /* Desktop enhancements */
+  @media (min-width: 769px) {
+    .social-icon, .email-link {
+      @apply p-2;
+    }
+  }
+}
+
+/* Custom styles for homepage layout */
+.homepage-layout {
+  padding-top: 0 !important;
+}
+
+/* Ensure other pages maintain proper spacing */
+.page-content {
+  padding-top: 80px;
+}
+
+/* Enhanced social media icon animations */
+@keyframes socialPulse {
+  0%, 100% { 
+    transform: scale(1) translateY(0); 
+    opacity: 1; 
+  }
+  50% { 
+    transform: scale(1.05) translateY(-2px); 
+    opacity: 0.9; 
+  }
+}
+
+@keyframes emailPulse {
+  0%, 100% { 
+    transform: scale(1); 
+    opacity: 1; 
+  }
+  50% { 
+    transform: scale(1.05); 
+    opacity: 0.8; 
+  }
+}
+
+.social-icon:active {
+  animation: socialPulse 0.3s ease-in-out;
+}
+
+.email-link:active {
+  animation: emailPulse 0.3s ease-in-out;
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .social-icon, .email-link {
+    @apply transition-none;
+  }
+  
+  .social-icon:hover, .email-link:hover {
+    @apply transform-none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .social-icon, .email-link {
+    @apply border-2 border-current;
+  }
+}
+
+/* Focus visible for better keyboard navigation */
+.social-icon:focus-visible, .email-link:focus-visible {
+  @apply ring-2 ring-maroon-primary ring-offset-2 ring-offset-gray-800;
+  outline: none;
+}
