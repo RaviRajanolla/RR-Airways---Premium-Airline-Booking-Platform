@@ -268,7 +268,14 @@ Manage users, flights, and view analytics with charts.
 
 
 
-### 1️⃣5️⃣ Join RR Airways Privilege Club
+### 1️⃣5️⃣ Admin Panel
+Manage flights, users, and monitor system performance efficiently.
+
+
+
+
+
+### 1️⃣6️⃣ Join RR Airways Privilege Club
 Choose Your Starting Tier
 <img width="1095" height="822" alt="screenshot-1752929912670" src="https://github.com/user-attachments/assets/3ca04b50-20fa-4de2-a204-2502376ebf03" />
 
