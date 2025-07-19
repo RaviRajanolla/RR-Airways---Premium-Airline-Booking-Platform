@@ -186,13 +186,14 @@ Backend:
 ### 1️⃣ Explore Page
 Welcome screen with featured flights and global destinations.
 
-![Screenshot_12-7-2025_181133_localhost](https://github.com/user-attachments/assets/d5512d6c-838d-41d2-9cda-fa40612ad971)
+![Screenshot_19-7-2025_181034_shiny-hotteok-ba275a netlify app](https://github.com/user-attachments/assets/371b4516-444b-413e-a057-85b83b949f53)
+
 
 
 ### 2️⃣ Book Flight
 Booking form with one-way, round-trip, and multi-city support.
 
-![Screenshot_12-7-2025_181348_localhost](https://github.com/user-attachments/assets/b53924b6-0a89-44e4-b314-06e177216c2c)
+![Screenshot_19-7-2025_181340_shiny-hotteok-ba275a netlify app](https://github.com/user-attachments/assets/acacade0-4792-44d4-a1af-9c506ae19b0b)
 
 
 ### 3️⃣ Search Flights
@@ -203,7 +204,7 @@ Search results page with filters, sorting, and flight options.
 
 ### 4️⃣ Experience
 Luxury travel experiences and membership perks.
-![Screenshot_12-7-2025_181937_localhost](https://github.com/user-attachments/assets/b981500c-f662-41ab-8d3d-cdb0c4451a0e)
+![Screenshot_19-7-2025_18169_shiny-hotteok-ba275a netlify app](https://github.com/user-attachments/assets/614aee9f-5b75-40d4-96e0-79c913c6dc2b)
 
 
 ### 5️⃣ Help & Support
@@ -266,6 +267,10 @@ Manage users, flights, and view analytics with charts.
 ![Screenshot_12-7-2025_183442_localhost](https://github.com/user-attachments/assets/dc55dd3b-a139-4381-8a67-6c1d4c11fa2a)
 
 
+
+### 1️⃣5️⃣ Join RR Airways Privilege Club
+Choose Your Starting Tier
+<img width="1095" height="822" alt="screenshot-1752929912670" src="https://github.com/user-attachments/assets/3ca04b50-20fa-4de2-a204-2502376ebf03" />
 
 
 
